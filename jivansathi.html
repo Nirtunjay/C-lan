@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevansathi Registration Form</title>
+</head>
+<body>
+    <h2>Create Your Profile on Jeevansathi.com</h2>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="profile_for">Create Profile For:</label>
+            <select id="profile_for" name="profile_for" required>
+                <option value="">Select</option>
+                <option value="myself">Myself</option>
+                <option value="son">Son</option>
+                <option value="daughter">Daughter</option>
+                <option value="brother">Brother</option>
+                <option value="sister">Sister</option>
+                <option value="relative_friend">Relative / Friend</option>
+            </select><br><br>
+
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br><br>
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br><br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Religion & Community</legend>
+            <label for="religion">Religion:</label>
+            <select id="religion" name="religion" required>
+                <option value="">Select Religion</option>
+                <option value="hindu">Hindu</option>
+                <option value="muslim">Muslim</option>
+                <option value="christian">Christian</option>
+                <option value="sikh">Sikh</option>
+                <option value="jain">Jain</option>
+                <option value="buddhist">Buddhist</option>
+                <option value="parsi">Parsi</option>
+                <option value="jewish">Jewish</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            
+            <label for="mother_tongue">Mother Tongue:</label>
+            <select id="mother_tongue" name="mother_tongue" required>
+                <option value="">Select Mother Tongue</option>
+                <option value="hindi">Hindi</option>
+                <option value="bengali">Bengali</option>
+                <option value="telugu">Telugu</option>
+                <option value="marathi">Marathi</option>
+                <option value="tamil">Tamil</option>
+                <option value="urdu">Urdu</option>
+                <option value="gujarati">Gujarati</option>
+                <option value="kannada">Kannada</option>
+                <option value="odia">Odia</option>
+                <option value="malayalam">Malayalam</option>
+                <option value="punjabi">Punjabi</option>
+                <option value="english">English</option>
+                <option value="other">Other</option>
+            </select><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" minlength="8" required><br><br>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Register Me">
+        <input type="reset" value="Clear Form">
+    </form>
+</body>
+</html>
