@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login & Signup</title>
+
+<!-- Google Font Added -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+
+ background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+ }
+
+ .container {
+ width: 350px;
+
+ 
+ padding: 40px;
+
+ background: white;
+ border-radius: 10px;
+
+ border: 2px solid #ff6b6b;
+
+
+ box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+
+ text-align: center;
+ }
+
+ h2 {
+ margin-bottom: 20px;
+
+ font-size: 28px;
+
+ text-transform: uppercase;
+
+ letter-spacing: 2px;
+ }
+
+ input {
+ width: 100%;
+ padding: 10px;
+
+ margin: 12px 0;
+
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ outline: none;
+ }
+
+ input:focus {
+ border-color: #ff6b6b;
+ }
+
+ button {
+ width: 100%;
+ padding: 10px;
+
+ background: #ff6b6b;
+
+ color: white;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ margin-top: 10px;
+ transition: 0.3s;
+ }
+
+ button:hover {
+ background: #e63946;
+ transform: scale(1.05);
+ }
+
+ .toggle {
+ margin-top: 15px;
+ font-size: 14px;
+ }
+
+ .toggle span {
+ color: blue;
+ cursor: pointer;
+ font-weight: bold;
+ }
+
+ .form {
+ display: none;
+ }
+
+ #login:target,
+ #signup:target {
+ display: block;
+ }
+
+ #login {
+ display: block;
+ }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+ <!-- Login Form -->
+ <div id="login" class="form">
+ <h2>Login</h2>
+ <input type="email" placeholder="Email" required>
+ <input type="password" placeholder="Password" required>
+ <button>Login</button>
+ <div class="toggle">
+ Don't have an account?
+ <a href="#signup"><span>Sign up</span></a>
+ </div>
+ </div>
+
+ <!-- Signup Form -->
+ <div id="signup" class="form">
+ <h2>Sign Up</h2>
+ <input type="text" placeholder="Full Name" required>
+ <input type="email" placeholder="Email" required>
+ <input type="password" placeholder="Password" required>
+ <button>Sign Up</button>
+ <div class="toggle">
+ Already have an account?
+ <a href="#login"><span>Login</span></a>
+ </div>
+ </div>
+
+</div>
+
+</body>
+</html>
